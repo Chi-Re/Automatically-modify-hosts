@@ -97,8 +97,7 @@ host = f'''# Copyright (c) 1993-2009 Microsoft Corp.
 #	127.0.0.1       localhost
 #	::1             localhost
 # GitHub Start 
-{generate}
-# GitHub End'''
+{generate}# GitHub End'''
 
 with open(f'{path}\\hosts', 'w', encoding='utf-8') as fs:
     fs.write(host)
