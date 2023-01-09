@@ -4,6 +4,7 @@ import urllib.request
 # 测试成功,可以正常使用,只不过有一点点的问题
 # 请在使用之前备份好你的hosts文件,因为这风险太大
 # 使用中时可能会报错,不要害怕,这是正常现象,多试几次就好,或者等待一会
+# ipconfig/flushdns
 ###########################
 
 # 你的hosts文件路径
@@ -27,6 +28,7 @@ def requesturl_notice(url):
 # 这些是需要获得网站的ip
 githubs = ['github.com',
            'gist.github.com',
+           'docs.github.com',
            'github.global.ssl.fastly.net',
            'assets-cdn.github.com',
            'raw.githubusercontent.com',
