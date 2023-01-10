@@ -1,3 +1,5 @@
+import subprocess
+import time
 import urllib.request
 
 ###########################
@@ -104,6 +106,9 @@ host = f'''# Copyright (c) 1993-2009 Microsoft Corp.
 with open(f'{path}\\hosts', 'w', encoding='utf-8') as fs:
     fs.write(host)
 
+# 等待1s后执行刷新ip命令
+time.sleep(1)
+subprocess.Popen('ipconfig/flushdns', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     # with open(f'whitt{er}.html', 'w', encoding='utf-8') as f:
     #     f.write(wert)
 
